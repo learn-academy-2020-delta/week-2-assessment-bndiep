@@ -68,7 +68,7 @@ const findNumbers = (array) => {
     // filter out only number data types
     let onlyNum = array.filter(value => {
         // if data type is a number, then return its value
-        return typeof value === "number" ? value : false
+        return typeof value === "number"
     })
     // order the only numbers array in increasing order - use sort method
     let ascendingOrderOfNum = onlyNum.sort((a, b) => a - b)
@@ -76,7 +76,7 @@ const findNumbers = (array) => {
     return ascendingOrderOfNum
 }
 
-// console.log(findNumbers(mixedDataArray))
+console.log(findNumbers(mixedDataArray))
 
 
 // --------------------4) Create a function that takes in a string and logs the index of the first vowel.
@@ -184,4 +184,4 @@ const incrementTo = (num) => {
     return numArray.join(", ")
 }
 
-console.log(incrementTo(10))
+// console.log(incrementTo(10))
